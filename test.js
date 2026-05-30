@@ -1,13 +1,19 @@
+let s = "dfa13221afd"
 
-let nums=[1,2,3,4]
-
-let n=nums.length
-
-var getConcatenation=function(nums){
-     let ans=[]
-
-     ans=[...nums,...nums]
-     console.log(ans)
+function secondHighest(s) {
+  const strArr = s
+    .split("")
+    .map((el) => +el)
+    .filter((el) => !isNaN(el));
+  let max=-1;
+  let secMax=-1;
+  for (let i = 0; i < strArr.length; i++) {
+    if (strArr[i] > max) {
+      secMax = max
+      max=strArr[i]
+    }
+  }
+  return secMax;
 }
 
-getConcatenation(nums)
+console.log(secondHighest(s));
