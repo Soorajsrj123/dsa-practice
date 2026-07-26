@@ -25,22 +25,23 @@
       cursor: pointer;
     }
   </style>
+  <script src="./Nameste-DSA/test.js" defer></script>
 </head>
 <body>
 
-  <h2>Calculator</h2>
+  <!-- <h2>Calculator</h2>
 
   <input type="text" id="display" disabled>
 
-  <br>
+  <br> -->
 
   <!-- Numbers -->
-  <button onclick="press('7')">7</button>
-  <button onclick="press('8')">8</button>
-  <button onclick="press('9')">9</button>
-  <button onclick="press('/')">/</button><br>
+  <button id="drp" onclick="press('7')">7</button>
+  <button id="drp" onclick="press('8')">8</button>
+  <button id="drp" onclick="press('9')">9</button>
+  <button id="drp" onclick="press('/')">/</button><br>
 
-  <button onclick="press('4')">4</button>
+  <button id="drp" onclick="press('4')">4</button>
   <button onclick="press('5')">5</button>
   <button onclick="press('6')">6</button>
   <button onclick="press('*')">*</button><br>
@@ -57,7 +58,7 @@
 
   <button onclick="clearDisplay()">C</button>
 
-  <script>
+  <!-- <script>
     function press(value) {
       document.getElementById("display").value += value;
       console.log(document.getElementById('display').value)
@@ -75,7 +76,7 @@
     function clearDisplay() {
       document.getElementById("display").value = "";
     }
-  </script>
+  </script> -->
 
 </body>
 </html>
