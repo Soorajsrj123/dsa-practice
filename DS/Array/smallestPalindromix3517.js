@@ -9,3 +9,6 @@ var smallestPalindrome = function(s) {
 
     return half + mid + rev;
 };
+
+
+console.log(smallestPalindrome('babab'))
