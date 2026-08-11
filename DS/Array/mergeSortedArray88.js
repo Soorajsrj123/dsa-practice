@@ -13,13 +13,15 @@ var merge = function (nums1, m, nums2, n) {
   let j = n - 1;
   let writeIndex = m + n - 1;
 
-  while (i>=0&&j >= 0) {
+    while (i >= 0 && j >= 0) {
+    //   if nums1 element have greater value then add to writeIndex
     if ( nums1[i] > nums2[j]) {
       nums1[writeIndex--] = nums1[i--];
     } else {
       nums1[writeIndex--] = nums2[j--];
     }
-  }
+    }
+    // if nums2 array have elements left writes into writeIndexes
   while (j >= 0) {
     nums1[writeIndex--] = nums2[j--];
   }
